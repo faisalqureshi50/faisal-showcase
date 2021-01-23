@@ -1,0 +1,32 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write your own custom component styles here */
+body {
+  height: 100vh;
+}
+
+body > #__next {
+  height: 100%;
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+@layer utilities {
+  .card {
+    border-radius: 4px;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    padding: 20px;
+  }
+  .edu-card-list:hover {
+    box-shadow: 0 3px 15px rgb(100 100 100);
+  }
+}
